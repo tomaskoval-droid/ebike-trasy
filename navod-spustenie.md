@@ -73,19 +73,17 @@ Odporúčam na to založiť **druhý, nový kľúč**. Starý si nechaj tak, ako
 6. V zozname pribudne nový kľúč. Klikni naň (alebo na ikonku ozubeného kolieska / ceruzky vedľa neho), aby sa otvorili jeho **nastavenia**.
 
 **Obmedzenie na adresu appky**
-7. V nastaveniach kľúča nájdi časť o **zabezpečení** (po česky **Zabezpečení**, po anglicky **Security**). Ide o nastavenie **HTTP referer**, teda zoznam stránok, na ktorých smie kľúč fungovať.
-8. Zapni ho, ak tam je prepínač, a do poľa pre doménu napíš **presne** toto:
-   `tomaskoval-droid.github.io`
-   - bez `https://`
-   - bez lomky `/` na konci
-   - bez `ebike-trasy`
-9. Potvrď pridanie (tlačidlo **Přidat / Add** alebo Enter) a potom **ulož** nastavenia (**Uložit / Save**).
-10. Over si, že je kľúč **zapnutý** (aktívny, povolená spotreba). Ak je pri ňom prepínač, má byť zapnutý.
+7. Otvorí sa okno **Editace API klíče**. Prepínač **Povolit volání API funkcí s tímto klíčem** nechaj zapnutý a voľbu **Všechny běžné služby** tiež nechaj.
+8. V časti **Omezení API klíče** klikni na rámček **Typ** (je v ňom „IP adresy“) a vyber **HTTP referer**.
+9. Do poľa **Hodnota** napíš presne: `tomaskoval-droid.github.io` (bez `https://`, bez lomky na konci, bez `ebike-trasy`).
+10. Klikni na zelené **PŘIDAT**. Adresa sa objaví v zozname pod poľom.
+11. Klikni na **ULOŽIT ZMĚNY** vpravo dole.
 
 **Skopírovanie kľúča**
-11. V nastaveniach alebo v zozname je kľúč zobrazený ako dlhý rad písmen a čísel. Vedľa býva ikonka **kopírovať** (dva prekrývajúce sa štvorčeky). Klikni na ňu.
+12. V zozname kľúčov je pri novom kľúči (napr. **trasy-ebike:Key-02**) ikonka **dvoch štvorčekov**. Klikni na ňu, kľúč sa skopíruje.
+    Kľúč je zobrazený ako dlhý rad písmen a čísel. Vedľa býva ikonka **kopírovať** (dva prekrývajúce sa štvorčeky). Klikni na ňu.
     Ak ikonka nie je, označ celý kľúč myšou (dvojklik naň) a stlač **Ctrl+C**.
-12. Kľúč máš teraz skopírovaný a môžeš pokračovať krokom 3b.
+13. Kľúč máš teraz skopírovaný a môžeš pokračovať krokom 3b.
 
 Dobré vedieť: zmena obmedzenia sa prejaví postupne, asi do 15 minút. Ak appka hneď po vložení kľúča neukáže mapu, počkaj 15 minút a obnov stránku.
 Ak niečo v Mapy.com vyzerá inak, ako píšem, odfoť obrazovku a pošli mi ju, poviem ti, kam kliknúť.
