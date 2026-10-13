@@ -4,7 +4,7 @@
 const API = 'https://api.mapy.com/v1';
 // Kľúč appky pre všetkých používateľov (na developer.mapy.com obmedzený len na adresu appky).
 // Kým je prázdny, každý si zadá vlastný kľúč v Nastaveniach. Vlastný kľúč má vždy prednosť.
-const APP_MAPY_KEY = '';
+const APP_MAPY_KEY = 'A5JK8ntSWxY8Mu1LD3IdvJ7yqttgi2atH-7ql8l_GE8';
 function mapyKey() { let k = ''; try { k = JSON.parse(localStorage.getItem('ebike.key') || '""'); } catch {} return k || APP_MAPY_KEY; }
 const $ = (id) => document.getElementById(id);
 const store = {
