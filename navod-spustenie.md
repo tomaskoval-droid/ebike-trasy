@@ -37,8 +37,21 @@ Celé to zaberie asi 10 minút. Najlepšie na počítači. Rob kroky po poradí.
 ### 2b: Doplnenie databázy (ak si to ešte nespravila)
 7. V ľavom paneli klikni na **SQL Editor** (ikonka `>_`).
 8. Hore klikni na **+** alebo **New query**.
-9. Otvor súbor **supabase-update.sql** (je v repozitári na GitHube, alebo v priečinku ebike-app). Označ celý text (Ctrl+A), skopíruj (Ctrl+C) a vlož do okna v Supabase (Ctrl+V).
-10. Vpravo dole klikni **Run** (alebo Ctrl+Enter). Dole by sa malo objaviť **Success. No rows returned**. To je v poriadku.
+9. Skopíruj text príkazov:
+   - **a)** Otvor si v prehliadači **novú kartu** (Ctrl+T, v mobile tlačidlo so štvorčekom → +).
+   - **b)** Do riadku s adresou hore vlož túto adresu a stlač Enter:
+     `https://raw.githubusercontent.com/tomaskoval-droid/ebike-trasy/main/supabase-update.sql`
+   - **c)** Otvorí sa biela stránka s textom. Prvý riadok začína `-- Ebike Trasy: doplnenie databázy…`. Na tejto stránke nič neklikaj ani nepíš.
+   - **d)** Klikni raz kamkoľvek do textu, aby bola stránka aktívna.
+   - **e)** Stlač **Ctrl+A** (podrž Ctrl a stlač A). Celý text sa zafarbí na modro, teda je označený.
+   - **f)** Stlač **Ctrl+C**. Text je skopírovaný, nič viditeľné sa nestane, to je v poriadku.
+   - **g)** Vráť sa na kartu so Supabase (kliknutím na jej záložku hore v prehliadači).
+   - **h)** Klikni do veľkého prázdneho okna editora (miesto, kde sa píše text, väčšinou s číslom riadku 1 vľavo). Ak v ňom už nejaký text je, stlač Ctrl+A a Delete, aby bolo prázdne.
+   - **i)** Stlač **Ctrl+V**. Vloží sa celý text, približne 30 riadkov. Posledný riadok je `grant select, insert, update on public.user_settings to authenticated;`
+   - Na Macu namiesto Ctrl použi Cmd (⌘).
+10. Vpravo dole klikni **Run** (alebo Ctrl+Enter). Dole by sa malo objaviť **Success. No rows returned**. To je v poriadku, znamená to, že sa všetko pridalo.
+   - Ak sa objaví okno s upozornením (napr. „Potential issue detected“ alebo „destructive operation“), klikni **Run this query** / **Confirm**. Príkazy nič nemažú, dajú sa spustiť aj viackrát.
+   - Ak sa objaví červený text s chybou, odfoť ho a pošli mi ho.
 
 ---
 
