@@ -74,10 +74,10 @@ Odporúčam na to založiť **druhý, nový kľúč**. Starý si nechaj tak, ako
 
 **Obmedzenie na adresu appky**
 7. Otvorí sa okno **Editace API klíče**. Prepínač **Povolit volání API funkcí s tímto klíčem** nechaj zapnutý a voľbu **Všechny běžné služby** tiež nechaj.
-8. V časti **Omezení API klíče** klikni na rámček **Typ** (je v ňom „IP adresy“) a vyber **HTTP referer**.
+8. V časti **Omezení API klíče** klikni na rámček **Typ** (je v ňom „IP adresy“) a vyber **Referery**.
 9. Do poľa **Hodnota** napíš presne: `tomaskoval-droid.github.io` (bez `https://`, bez lomky na konci, bez `ebike-trasy`).
 10. Klikni na zelené **PŘIDAT**. Adresa sa objaví v zozname pod poľom.
-11. Klikni na **ULOŽIT ZMĚNY** vpravo dole.
+11. Prepínač **Záměrně nezabezpečený API klíč** nechaj vypnutý a klikni na **ULOŽIT ZMĚNY** vpravo dole.
 
 **Skopírovanie kľúča**
 12. V zozname kľúčov je pri novom kľúči (napr. **trasy-ebike:Key-02**) ikonka **dvoch štvorčekov**. Klikni na ňu, kľúč sa skopíruje.
