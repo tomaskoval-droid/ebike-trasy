@@ -57,14 +57,38 @@ Celé to zaberie asi 10 minút. Najlepšie na počítači. Rob kroky po poradí.
 
 ## Krok 3: Kľúč Mapy.com priamo v appke (aby ľudia nemuseli mať vlastný)
 
-### 3a: Obmedziť kľúč na adresu appky
-1. Otvor **https://developer.mapy.com** a prihlás sa.
-2. Choď do svojho projektu a sekcie s **API kľúčmi** (API keys).
-3. Pri svojom kľúči klikni na úpravu (ceruzka alebo názov kľúča).
-4. Nájdi nastavenie povolených domén / referrerov (**Allowed domains**, **HTTP referrer** alebo podobne) a pridaj:
+### 3a: Nový kľúč len pre appku na internete
+
+Prečo: kľúč v appke na internete uvidí každý, kto si pozrie kód stránky. Preto mu nastavíme, že funguje **len na adrese tvojej appky**. Na inej stránke ho nikto nepoužije.
+Odporúčam na to založiť **druhý, nový kľúč**. Starý si nechaj tak, ako je, aby ti doma fungovala appka zo súboru (tam by obmedzený kľúč nefungoval).
+
+**Prihlásenie**
+1. Otvor **https://developer.mapy.com/account/**
+2. Prihlás sa svojím Seznam účtom (ten istý e-mail a heslo, ako keď si kľúč zakladala).
+3. Zobrazí sa tvoj **projekt** (projektov môže byť aj viac). Klikni na projekt, v ktorom máš svoj doterajší kľúč.
+
+**Nový kľúč**
+4. V projekte uvidíš zoznam kľúčov (zatiaľ asi jeden). Nájdi tlačidlo na pridanie kľúča (býva pri zozname, s textom ako **Nový API klíč / Vytvořit klíč / Add API key** alebo so znakom **+**) a klikni naň.
+5. Ak sa pýta na názov, napíš napríklad **ebike web**. Potvrď.
+6. V zozname pribudne nový kľúč. Klikni naň (alebo na ikonku ozubeného kolieska / ceruzky vedľa neho), aby sa otvorili jeho **nastavenia**.
+
+**Obmedzenie na adresu appky**
+7. V nastaveniach kľúča nájdi časť o **zabezpečení** (po česky **Zabezpečení**, po anglicky **Security**). Ide o nastavenie **HTTP referer**, teda zoznam stránok, na ktorých smie kľúč fungovať.
+8. Zapni ho, ak tam je prepínač, a do poľa pre doménu napíš **presne** toto:
    `tomaskoval-droid.github.io`
-   Ak tam už nejaké domény sú, nechaj ich a túto len pridaj. Ulož.
-5. Skopíruj si celý kľúč (dlhý reťazec písmen a čísel).
+   - bez `https://`
+   - bez lomky `/` na konci
+   - bez `ebike-trasy`
+9. Potvrď pridanie (tlačidlo **Přidat / Add** alebo Enter) a potom **ulož** nastavenia (**Uložit / Save**).
+10. Over si, že je kľúč **zapnutý** (aktívny, povolená spotreba). Ak je pri ňom prepínač, má byť zapnutý.
+
+**Skopírovanie kľúča**
+11. V nastaveniach alebo v zozname je kľúč zobrazený ako dlhý rad písmen a čísel. Vedľa býva ikonka **kopírovať** (dva prekrývajúce sa štvorčeky). Klikni na ňu.
+    Ak ikonka nie je, označ celý kľúč myšou (dvojklik naň) a stlač **Ctrl+C**.
+12. Kľúč máš teraz skopírovaný a môžeš pokračovať krokom 3b.
+
+Dobré vedieť: zmena obmedzenia sa prejaví postupne, asi do 15 minút. Ak appka hneď po vložení kľúča neukáže mapu, počkaj 15 minút a obnov stránku.
+Ak niečo v Mapy.com vyzerá inak, ako píšem, odfoť obrazovku a pošli mi ju, poviem ti, kam kliknúť.
 
 ### 3b: Vložiť kľúč do appky na GitHube
 6. Otvor **https://github.com/tomaskoval-droid/ebike-trasy/blob/main/app.js**
